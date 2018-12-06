@@ -309,6 +309,12 @@ def changePassword():
         return "what are you trying to do?"
 
 
+@app.route('/id/<username>')
+def getID(username):
+    sessiondb = db.getSession(engine)
+    user = sessiondb.query(entities.User).filter(entities.User.username == username).first()
+    print(str(user.id))
+    return str(user.id)
 
 
 

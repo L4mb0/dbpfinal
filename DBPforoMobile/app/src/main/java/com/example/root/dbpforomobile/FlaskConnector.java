@@ -14,7 +14,7 @@ import java.util.Map;
 
 public class FlaskConnector {
     String user = "";
-    final String URL = "http://eb441f67.ngrok.io";
+    final String URL = ""; //AQUI CAMBIEN EL URL POR SU LOCAL HOST, CUANDO TERMINEN TODO METAN EL PY EN PYTHONANYWHERE Y PONGAN ESA URL
     String response = "";
     private static final String TAG = "RequestsFlask";
     public Context mContext;
@@ -33,7 +33,7 @@ public class FlaskConnector {
             final String username,
             final String password,
             final VolleyCallback callback) {
-        String url = URL + "/dologin";
+        String url = URL + "/do_login";
 
         StringRequest stringRequest = new StringRequest(
                 Request.Method.POST,
@@ -119,61 +119,6 @@ public class FlaskConnector {
     }
 
 
-    public void getRanking(
-            final VolleyCallback callback) {
-        String url = URL + "/getTop10";
-        StringRequest stringRequest = new StringRequest(
-                Request.Method.GET,
-                url,
-                new Response.Listener<String>() {
-                    @Override
-                    public void onResponse(String response) {
-                        Log.d(TAG, "onResponse: " + response);
-
-                        callback.onSuccess(response);
-                    }
-                },
-                new Response.ErrorListener() {
-                    @Override
-                    public void onErrorResponse(VolleyError error) {
-                        Log.d(TAG, "onErrorResponse: " + error.toString());
-                        callback.onFailure(error.toString());
-                    }
-                }) {
-
-        };
-        Singleton.getInstance(mContext).addToRequestQueue(stringRequest);
-
-    }
-
-
-    public void getShow(
-            final String showName,
-            final VolleyCallback callback) {
-        String url = URL + "/m/" + showName;
-        StringRequest stringRequest = new StringRequest(
-                Request.Method.GET,
-                url,
-                new Response.Listener<String>() {
-                    @Override
-                    public void onResponse(String response) {
-                        Log.d(TAG, "onResponse: " + response);
-
-                        callback.onSuccess(response);
-                    }
-                },
-                new Response.ErrorListener() {
-                    @Override
-                    public void onErrorResponse(VolleyError error) {
-                        Log.d(TAG, "onErrorResponse: " + error.toString());
-                        callback.onFailure(error.toString());
-                    }
-                }) {
-
-        };
-        Singleton.getInstance(mContext).addToRequestQueue(stringRequest);
-
-    }
 
     public void getUserId(
             final String username,
