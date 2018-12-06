@@ -14,7 +14,7 @@ import java.util.Map;
 
 public class FlaskConnector {
     String user = "";
-    final String URL = ""; //AQUI CAMBIEN EL URL POR SU LOCAL HOST, CUANDO TERMINEN TODO METAN EL PY EN PYTHONANYWHERE Y PONGAN ESA URL
+    final String URL = "http://juliobonifaz20.pythonanywhere.com/"; //AQUI CAMBIEN EL URL POR SU LOCAL HOST, CUANDO TERMINEN TODO METAN EL PY EN PYTHONANYWHERE Y PONGAN ESA URL
     String response = "";
     private static final String TAG = "RequestsFlask";
     public Context mContext;
