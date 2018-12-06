@@ -118,6 +118,50 @@ public class FlaskConnector {
         Singleton.getInstance(mContext).addToRequestQueue(stringRequest);
     }
 
+    public void post(
+            final String title,
+            final String content,
+            final VolleyCallback callback) {
+        String url = URL + "/create_post";
+
+        StringRequest stringRequest = new StringRequest(
+                Request.Method.POST,
+                url,
+                new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String response) {
+                        Log.d(TAG, "onResponse: " + response);
+                        callback.onSuccess(response);
+                    }
+                },
+                new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                        Log.d(TAG, "onErrorResponse: " + error.toString());
+                        callback.onFailure(error.toString());
+                    }
+                }) {
+            @Override
+            public Map<String, String> getHeaders() throws AuthFailureError {
+                HashMap<String, String> params = new HashMap<>();
+                params.put("User-Agent", "android");
+                params.put("Content-Type", "application/x-www-form-urlencoded");
+                return params;
+            }
+
+            @Override
+            protected Map<String, String> getParams() throws AuthFailureError {
+                HashMap<String, String> params = new HashMap<>();
+                params.put("title", title);
+                params.put("content", content);
+
+                return params;
+            }
+        };
+
+
+        Singleton.getInstance(mContext).addToRequestQueue(stringRequest);
+    }
 
 
     public void getUserId(
@@ -146,6 +190,7 @@ public class FlaskConnector {
         Singleton.getInstance(mContext).addToRequestQueue(stringRequest);
 
     }
+
 
     public void getUser(
             final String user_id,
@@ -186,6 +231,42 @@ public class FlaskConnector {
         };
         Singleton.getInstance(mContext).addToRequestQueue(stringRequest);
     }
+
+    public void getPost(
+            final String title,
+            final String content,
+            final VolleyCallback callback) {
+        String url = URL + "/posts";
+
+        StringRequest stringRequest = new StringRequest(
+                Request.Method.POST,
+                url,
+                new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String response) {
+                        Log.d(TAG, "onResponse: " + response);
+                        callback.onSuccess(response);
+                    }
+                },
+                new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                        Log.d(TAG, "onErrorResponse: " + error.toString());
+                        callback.onFailure(error.toString());
+                    }
+                }) {
+            @Override
+            public Map<String, String> getHeaders() throws AuthFailureError {
+                HashMap<String, String> params = new HashMap<>();
+                params.put("User-Agent", "android");
+                params.put("Content-Type", "application/x-www-form-urlencoded");
+                return params;
+            }
+
+        };
+        Singleton.getInstance(mContext).addToRequestQueue(stringRequest);
+    }
+
 
 
     public void changePassword(

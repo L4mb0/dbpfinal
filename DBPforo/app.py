@@ -176,11 +176,15 @@ def create_post():
     session = db.getSession(engine)
     session.add(post)
     session.commit()
+    if request.headers.get("User-Agent") == "android":
+        return "post registered"
 
     return render_template('main.html')
 
 @app.route('/posts', methods = ['GET'])
 def posts():
+    if request.headers.get("User-Agent") != "android":
+        return "what are you doing here?"
     db_session = db.getSession(engine)
     posts = db_session.query(entities.Post)
     data = []

@@ -20,7 +20,8 @@ public class MyAccountActivity extends AppCompatActivity {
     FlaskConnector request = new FlaskConnector(this);
 
     LinearLayout mainLayout;
-    TextView accountUsername, accountEmail, accountPosition, accountJoined, accountAge, accountVotes;
+    TextView accountUsername;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

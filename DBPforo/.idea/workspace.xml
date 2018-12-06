@@ -1081,6 +1081,7 @@
       <change afterPath="$PROJECT_DIR$/../../../juan.beltran/MyChat_Web/templates/login.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../../juan.beltran/MyChat_Web/templates/register.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../../juan.beltran/MyChat_Web/templates/success.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../../julio.bonifaz/MyChat_Mobile/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../../julio.bonifaz/MyChat_Mobile/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../../julio.bonifaz/MyChat_Mobile/.idea/codeStyles/Project.xml" afterDir="false" />
@@ -1610,9 +1611,11 @@
       <change beforePath="$PROJECT_DIR$/../../MyChat_Mobile/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../MyChat_Mobile/app/src/main/res/values/strings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../MyChat_Mobile/app/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../MyChat_Mobile/app/src/main/res/values/styles.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../MyChat_Web/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../MyChat_Web/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../DBPforoMobile/app/src/main/java/com/example/root/dbpforomobile/FlaskConnector.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DBPforoMobile/app/src/main/java/com/example/root/dbpforomobile/FlaskConnector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DBPforoMobile/app/src/main/java/com/example/root/dbpforomobile/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DBPforoMobile/app/src/main/java/com/example/root/dbpforomobile/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DBPforoMobile/app/src/main/java/com/example/root/dbpforomobile/MenuActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DBPforoMobile/app/src/main/java/com/example/root/dbpforomobile/MenuActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DBPforoMobile/app/src/main/java/com/example/root/dbpforomobile/MyAccountActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DBPforoMobile/app/src/main/java/com/example/root/dbpforomobile/MyAccountActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../julio.bonifaz/MyChat_Web/web/model/entities.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../julio.bonifaz/MyChat_Web/web/model/entities.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../julio.bonifaz/MyChat_Web/web/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../julio.bonifaz/MyChat_Web/web/server.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../julio.bonifaz/MyChat_Web/web/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../julio.bonifaz/MyChat_Web/web/templates/index.html" afterDir="false" />
@@ -1748,12 +1751,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="57" />
+          <entry key="py" value="63" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="57" />
+          <entry key="Python" value="63" />
         </counts>
       </usages-collector>
     </session>
@@ -1766,8 +1769,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="764">
-              <caret line="316" column="23" selection-start-line="316" selection-start-column="23" selection-end-line="316" selection-end-column="23" />
+            <state relative-caret-position="174">
+              <caret line="185" column="38" selection-start-line="185" selection-start-column="28" selection-end-line="185" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -1852,6 +1855,7 @@
       <find>main</find>
       <find>getJSON</find>
       <find>register</find>
+      <find>User-agent</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -2090,8 +2094,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="764">
-          <caret line="316" column="23" selection-start-line="316" selection-start-column="23" selection-end-line="316" selection-end-column="23" />
+        <state relative-caret-position="174">
+          <caret line="185" column="38" selection-start-line="185" selection-start-column="28" selection-end-line="185" selection-end-column="38" />
         </state>
       </provider>
     </entry>

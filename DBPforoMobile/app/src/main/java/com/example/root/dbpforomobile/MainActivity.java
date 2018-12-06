@@ -81,4 +81,8 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(MainActivity.this,RegisterActivity.class));
     }
 
+    public void onClickBtnPost(View v){
+        startActivity(new Intent(MainActivity.this,PostActivity.class));
+    }
+
 }
