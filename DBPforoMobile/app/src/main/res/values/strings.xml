@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">DBPforoMobile</string>
+     <!--como no se que hacen los de abajo de este mensaje es solo para que no se crahse-->
+    <string name="Username">Username</string>
+    <string name="Pass">Pass</string>
+    <string name="LogOut">LogOut</string>
 </resources>
