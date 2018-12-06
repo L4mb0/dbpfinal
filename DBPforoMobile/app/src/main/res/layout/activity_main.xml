@@ -31,7 +31,7 @@
                 android:textSize="45sp"
 
                 android:layout_gravity="center"
-                android:fontFamily="@font/courier_new"
+
                 >
             </TextView>
 
@@ -43,6 +43,7 @@
             android:gravity="center" >
 
             <EditText
+                android:background="@color/black"
                 android:id="@+id/txtUsername"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -62,6 +63,7 @@
             android:gravity="center" >
 
             <EditText
+                android:background="@color/black"
                 android:id="@+id/txtPassword"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
